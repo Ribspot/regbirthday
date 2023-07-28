@@ -1,0 +1,6 @@
+SELECT *FROM gift JOIN guest	ON gift.gift_id = guest.guest_id;
+SELECT guest_fullname,guest_phone FROM gift JOIN guest	ON gift.gift_id = guest.guest_id WHERE gift_name= 'cash';
+SELECT *FROM gift JOIN guest	ON gift.gift_id = guest.guest_id WHERE guest_gender='Female';
+SELECT *FROM gift JOIN guest	ON gift.gift_id = guest.guest_id WHERE guest_phone='';
+
+SELECT * FROM state JOIN guest ON state.state_id=guest.guest_state WHERE state_name='zamfara';
